@@ -13,7 +13,7 @@ const Physics = (entities, { touches, time, dispatch }) => {
     .filter((t) => t.type === "press")
     .forEach((t) => {
       Matter.Body.setVelocity(entities.Bird.body, {
-        x: 0,
+        x: -7,
         y: -7,
       });
     });
